@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('pictures/cup_coffee.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    /* Ensure text is visible over the background */
+    text-align: center;
+    /* Center text alignment */
+}
+.form-group {
+    margin-bottom: 20px;
+    /* Space between each question */
+}
+
+/* Existing styles remain the same */
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    /* Make background darker for better readability */
+    padding: 40px;
+    /* Increase padding */
+    border-radius: 10px;
+    width: 80%;
+    /* Control the width of the container */
+    max-width: 1500px;
+    /* Adjusted max width for better layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Optional: Adds shadow for depth */
+    color: #fff;
+    /* Ensures text color is white for readability */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center items vertically *
+    /* Ensures vertical alignment of form groups */
+    align-items: center;
+    /* Center aligns the content */
+}
+
+h1 {
+    font-size: 5em;
+    /* Larger header */
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 3em;
+    /* Larger paragraph text */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    /* Larger button padding */
+    background-color: #444;
+    /* Darker button background */
+    color: #fff;
+    /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2.5em;
+    /* Larger font size for buttons */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #666;
+    /* Lighter color on hover */
+}
+
+.links {
+    margin-top: 20px;
+    /* Add spacing above the link area if needed */
+}
+p,
+label,
+select {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    vertical-align: auto;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Slightly transparent white for headers */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 2.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 3em;
+}
