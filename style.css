@@ -3,7 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    color: #fff;
+}
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
@@ -22,6 +54,64 @@ body {
 .form-group {
     margin-bottom: 20px;
     /* Space between each question */
+}
+
+/* Style the coffee mugs (default color) */
+.cups {
+    margin: 10px 0;
+}
+
+/* Style for coffee cups */
+.cup {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+    /* Light gray for unselected cups */
+    transition: all 0.3s ease;
+    /* Smooth transition for color and content change */
+}
+
+/* Style when a cup is selected */
+.cup.selected {
+    color: #6b4f29;
+    /* Coffee-like color for selected cups */
+}
+/* Overwrite the circle symbol to a coffee mug upon selection */
+.cup.selected::before {
+    content: "\2615";
+    /* Unicode for coffee mug */
+}
+/* Enhanced Styling for the review textarea */
+#review {
+    width: 80%;
+    /* Adjust width as necessary for layout */
+    min-height: 150px;
+    /* Minimum height */
+    padding: 20px;
+    /* Comfortable padding */
+    border: 2px solid #aaa;
+    /* More visible border */
+    border-radius: 10px;
+    /* Softer rounded corners */
+    background-color: #fff;
+    /* Light background for better readability */
+    font-family: 'Indie Flower', cursive;
+    /* Handwritten-style font */
+    font-size: 1.6em;
+    /* Sufficient size for legibility */
+    color: #555;
+    /* Softer text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    outline: none;
+    /* Remove focus outline for cleaner look */
+    transition: border 0.3s ease-in-out;
+    /* Smooth transition for focus */
+}
+
+#review:focus {
+    border-color: #6b4f29;
+    /* Highlight color when focused */
 }
 
 /* Existing styles remain the same */
